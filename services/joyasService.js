@@ -37,7 +37,7 @@ const getJoyas = async (req, res) => {
   
       const result = await pool.query(query, [(validPage - 1) * validLimits, validLimits]);
   
-      // Lógica para estructura HATEOAS (simplemente devolveremos los datos por ahora)
+      // Lógica para estructura HATEOAS 
       const joyas = result.rows;
       const estructuraHateoas = joyas.map((joya) => {
         return {
@@ -89,7 +89,7 @@ const getJoyas = async (req, res) => {
   
       const result = await pool.query(query, params);
   
-      // Lógica para estructura HATEOAS (simplemente devolveremos los datos por ahora)
+      // Lógica para estructura HATEOAS 
       const joyas = result.rows;
       const estructuraHateoas = joyas.map((joya) => {
         return {

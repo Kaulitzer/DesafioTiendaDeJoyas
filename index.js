@@ -1,4 +1,3 @@
-// index.js
 const express = require('express');
 const routes = require('./routes/routes');
 const { informeMiddleware } = require('./services/middleware');
